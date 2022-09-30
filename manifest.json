@@ -1,0 +1,17 @@
+{
+  "name": "Favicon For Google Search Results",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "description": "Like DuckDuckGo, this extension displays a favicon to the left of the URL in the search results. This icon created by Freepik - Flaticon",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon32.png",
+    "16": "icon16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*"],
+      "js": ["content_scripts.js"]
+    }
+  ]
+}
